@@ -34,3 +34,10 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# EMAIL SETTINGS
+EMAIL_USE_TLS = True
+EMAIL_HOST = get_secret('EMAIL_HOST')
+EMAIL_HOST_USER = get_secret('EMAIL_USER')
+EMAIL_PASSWORD = get_secret('EMAIL_PASSWORD')
+EMAIL_PORT = get_secret('EMAIL_PORT')

@@ -53,6 +53,8 @@ DJANGO_APPS = (
 )
 
 LOCAL_APPS = (
+    'applications.users',
+    'applications.home',
 )
 
 THIRD_PARTY_APPS = ()
@@ -107,6 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# trabaar con modelo de usuarios personalizado
+AUTH_USER_MODEL = 'users.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
